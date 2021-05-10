@@ -12,9 +12,9 @@ export class AppComponent {
   constructor() {
   	this.initializeApp();
   }
-  
+
   initializeApp() {
     //firebase.initializeApp(FIREBASE_CONFIG)
-    //firebase.initializeApp(firebase) 
+    //firebase.initializeApp(firebase)
   }
 }

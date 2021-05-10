@@ -6,7 +6,7 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./main/main.module').then(m => m.MainPageModule)
   },
-  { 
+  {
     path: 'main',
     loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
   },
@@ -29,7 +29,16 @@ const routes: Routes = [
   {
     path: 'student-check',
     loadChildren: () => import('./check/student-check/student-check.module').then( m => m.StudentCheckPageModule)
+  },  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'alert',
+    loadChildren: () => import('./alert/alert.module').then( m => m.AlertPageModule)
   }
+
+
 ];
 @NgModule({
   imports: [
